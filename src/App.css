@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Unbounded", cursive;
+  
 }
 
 body {
@@ -14,8 +15,7 @@ body {
 .bg_img {
   width: 100%;
   min-height: 100vh;
-  background: url('https: //tse3.mm.bing.net/th?id=OIP.kmFC7BDpQhjUSrIPj4OSCAHaE6&pid=Api&P=0&h=180') no-repeat center center/cover;
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;

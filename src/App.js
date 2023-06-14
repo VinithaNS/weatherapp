@@ -3,9 +3,9 @@ import { CircularProgress, Slide, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 
 import "./App.css";
-
+const KEY = "4045793bf138e8b90351a4b5ae380784";
 function App() {
-  const [cityName, setCityName] = useState("Rome");
+  const [cityName, setCityName] = useState("Coimbatore");
   const [inputText, setInputText] = useState("");
   const [data, setData] = useState({});
   const [error, setError] = useState(false);
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=189271b827844bff7388350c44848615&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${KEY}&units=metric`
     )
       .then((res) => {
         if (res.status === 200) {
